@@ -16,9 +16,9 @@ You can try the tool live here: [Live Demo](https://epubconverter-brown.vercel.a
 ## Technologies Used
 
 - **Frontend:** HTML, CSS, JavaScript (React, Vue, or Vanilla JS based on your implementation)
-- **Backend:** Node.js, Python, or any suitable backend framework
+- **Backend:** js, Python, or any suitable backend framework
 - **Conversion Engine:** [Ebook Conversion Libraries](https://calibre-ebook.com/) (e.g., `calibre`, `ebook-convert`)
-- **Deployment:** [Hosting Platform](vercel)
+- **Deployment:** [Hosting Platform](https://vercel.com/)
 
 ## Installation
 
@@ -34,4 +34,4 @@ Before running the project, ensure you have the following installed:
 
 ```bash
 git clone https://github.com/Koshikamani/epubconverter.git
-cd epub-to-pdf-converter
+cd epubconverter
