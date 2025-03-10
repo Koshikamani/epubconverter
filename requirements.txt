@@ -90,7 +90,7 @@ mdurl==0.1.2
 mechanize==0.4.9
 monotonic==1.6
 more-itertools==10.2.0
-mpmath==0.0.0
+mpmath==1.4.0a4
 msgpack==1.0.3
 nbclient==0.8.0
 nbconvert==6.5.3
