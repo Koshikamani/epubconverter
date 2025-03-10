@@ -50,7 +50,6 @@ fs==2.4.16
 furo==2024.8.6
 
 greenlet==3.0.3
-gyp==0.1
 html2text==2024.2.26
 html5-parser==0.4.12
 html5lib==1.1
