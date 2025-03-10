@@ -47,7 +47,7 @@ Flask==3.0.2
 Flask-SocketIO==5.3.6
 fonttools==4.46.0
 fs==2.4.16
-furo==0.0.0
+furo==2024.8.6
 gpg==1.18.0
 greenlet==3.0.3
 gyp==0.1
