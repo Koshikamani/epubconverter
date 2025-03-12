@@ -1,4 +1,4 @@
-# Use an official Python image as the base
+# Use an official Python image
 FROM python:3.11
 
 # Set the working directory inside the container
@@ -9,7 +9,6 @@ RUN apt-get update && apt-get install -y \
     gobject-introspection \
     libgirepository1.0-dev \
     libcairo2-dev \
-    gir1.2-gtk-3.0 \
     pkg-config \
     python3-dev \
     python3-gi \
@@ -17,18 +16,18 @@ RUN apt-get update && apt-get install -y \
     cmake \
     meson
 
-# Copy the project files into the container
-COPY . .
+# Copy all project files into the container
+COPY . /app
 
 # Change to the backend directory where server.py is located
-WORKDIR /app
+WORKDIR /app/backend
 
-# Install dependencies using Poetry (if using it) or pip
+# Install Python dependencies
 RUN pip install --no-cache-dir -r ../requirements.txt
 
-# Expose the port if running a web app (adjust if needed)
-EXPOSE 8000  # Change if your app uses a different port
+# Expose the required port (change if needed)
+EXPOSE 8000
 
-# Start the application
-CMD ["python", "server.py"]  # This will run server.py inside the backend folder
+# Start the server
+CMD ["python", "server.py"]
 
