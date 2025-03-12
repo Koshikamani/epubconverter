@@ -9,7 +9,7 @@ UPLOAD_FOLDER = "uploads"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": "*"}})
+CORS(app, origins=["https://epubconverter-qyz53niv3-koshikamanis-projects.vercel.app"])
 ALLOWED_EXTENSIONS = {"epub", "azw3"}
 
 def allowed_file(filename):
